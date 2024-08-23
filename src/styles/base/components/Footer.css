@@ -1,0 +1,16 @@
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.footer h1 {
+  color: white;
+  font-size: 2rem;
+}
+.footer p {
+  color: white;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=Footer.css.map */

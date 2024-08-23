@@ -1,0 +1,27 @@
+.container-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ff6060;
+}
+.container-error img {
+  max-width: 600px;
+  max-height: 270px;
+  padding: 50px 0px 0px 0px;
+  margin: 0px;
+}
+.container-error_txt {
+  font-weight: 500;
+  font-size: 36px;
+  padding: 50px 0px 100px 0px;
+  margin: 0px;
+}
+.container-error_link {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 50px 0px 50px 0px;
+  margin: 0px;
+}/*# sourceMappingURL=Erreur404.css.map */

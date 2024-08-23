@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+  & ul {
+    display: flex;
+    gap: 3rem;
+  }
+
+  & a {
+    color: rgb(255, 96, 96);
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+  }
+}

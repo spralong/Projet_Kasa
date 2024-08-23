@@ -1,0 +1,29 @@
+.card {
+  width: 100%;
+  height: 340px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  &_img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  &_title {
+    text-decoration: none;
+    font-size: 20px;
+    margin: none;
+    padding: 10px;
+  }
+
+  &_cont {
+    width: 50%;
+  }
+}
+
+.cont_link {
+  width: 30%;
+  text-decoration: none;
+}
