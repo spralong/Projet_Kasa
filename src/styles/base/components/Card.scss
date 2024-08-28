@@ -1,7 +1,6 @@
 .card {
-  width: 50%;
-  height: 340px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 350px;
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
@@ -12,18 +11,18 @@
   }
 
   &_title {
-    text-decoration: none;
     font-size: 20px;
-    margin: none;
-    padding: 10px;
-  }
-
-  &_cont {
-    width: 50%;
+    margin: 0px;
+    padding-left: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 60px;
   }
 }
 
 .cont_link {
   width: 30%;
   text-decoration: none;
+  color: black;
 }
