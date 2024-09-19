@@ -11,7 +11,7 @@
   }
 
   &_title {
-    font-size: 20px;
+    font-size: 1.1vw;
     margin: 0px;
     padding-left: 10px;
     text-decoration: none;
@@ -25,4 +25,10 @@
   width: 30%;
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 1400px) {
+  .cont_link {
+    width: 47%;
+  }
 }
