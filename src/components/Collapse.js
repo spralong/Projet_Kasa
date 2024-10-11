@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import chevronup from "../images/chevron-haut.png";
+import chevrondown from "../images/chevron-bas.png";
 
 const Collapse = ({ title, content }) => {
   // Déclaration du state pour gérer l'ouverture/fermeture du collapse
@@ -11,9 +13,7 @@ const Collapse = ({ title, content }) => {
     <div className="collapse_container">
       <div className="collapse_title" onClick={toggleCollapse}>
         <h2>{title}</h2>
-        <img
-          src={isOpen ? "./images/chevron-up.svg" : "./images/chevron-down.svg"}
-        />
+        <img src={isOpen ? chevronup : chevrondown} />
       </div>
       {/* Affiche le contenu si le collapse est ouvert */}
       {isOpen && (

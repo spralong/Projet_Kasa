@@ -1,15 +1,30 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import logement from "../logements";
 
-const Fiche_Logement = () => {
-  return (
-    <div>
-      <Header />
+const logementFonction = () => {
+  const appart = window.location.pathname;
+  console.log(appart);
 
-      <Footer />
-    </div>
+  const appart2 = appart.split("/logement/");
+  console.log(appart2[1]);
+
+  const test = logement.find(
+    (logementFonction) => logementFonction.id === appart2
   );
+  console.log(test);
 };
 
-export default Fiche_Logement;
+// const Fiche_Logement = () => {
+//   return (
+//     <div>
+//       <Header />
+
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Fiche_Logement;
+export default logementFonction;

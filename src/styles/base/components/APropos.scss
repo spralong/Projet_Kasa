@@ -14,20 +14,16 @@
 }
 
 .collapse {
-  width: 80%;
+  width: 75%;
   display: flex;
-  padding-left: 10%;
+  margin: auto;
   margin-bottom: 70px;
   flex-direction: column;
   row-gap: 20px;
-
-  &_container {
-    background-color: #ff6060;
-    border-radius: 5px;
-  }
-
   &_title {
     display: flex;
+    background-color: #ff6060;
+    border-radius: 5px;
     align-items: center;
     width: 96%;
     justify-content: space-between;
@@ -35,11 +31,22 @@
     padding-left: 2%;
     height: 50px;
     color: white;
+
+    & img {
+      width: 25px;
+      color: white;
+    }
+    & h2 {
+      font-size: 24px;
+      font-weight: 500;
+    }
   }
   &_content {
     background-color: #f7f7f7;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 20px 10px 20px;
     color: #ff6060;
     border-radius: 5px;
+    font-size: 24px;
+    font-weight: 400;
   }
 }
