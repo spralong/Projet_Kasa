@@ -11,7 +11,7 @@ const Collapse = ({ title, content }) => {
 
   return (
     <div className="collapse_container">
-      <div className="collapse_title" onClick={toggleCollapse}>
+      <div className="collapse_title collapse_about" onClick={toggleCollapse}>
         <h2>{title}</h2>
         <img src={isOpen ? chevronup : chevrondown} />
       </div>

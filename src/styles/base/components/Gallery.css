@@ -1,6 +1,11 @@
 .cont_gallery {
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  row-gap: 20px;
+  display: flex;
+  flex-direction: row;
   margin-top: 40px;
+  background-color: #f7f7f7;
+  padding: 5%;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 5%;
+  row-gap: 50px;
 }/*# sourceMappingURL=Gallery.css.map */

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Collapse from "../components/Collapse";
 import CollapseData from "../collapse.json";
 import Montagnes from "../images/Montagnes.png";
+import "../styles/base/components/APropos.scss";
 
 const About = () => {
   return (
