@@ -12,23 +12,23 @@ const Carrousel = ({ pictures }) => {
 
   return (
     <div className="containeur_carrousel">
-      {/* <img
-        src={pictures.map(pictures, index)}
-        alt="photo appartement"
-        className="containeur_carrousel-img"
-      /> */}
       <div
         key={index}
         className={
-          'image_carrousel {index === currentIndex ? "active" : "hidden"}'
+          'containeur_carrousel-image {index === currentIndex ? "active" : "hidden"}'
         }
       >
         {pictures.map((picture, index) => (
           <img src={picture}></img>
         ))}
       </div>
-      <button onClick={clickGauche}></button>
-      <button onClick={clickDroit}></button>
+      <div className="containeur_carrousel-button">
+        <button onClick={clickGauche}></button>
+        <p>
+          {currentIndex + 1}/{pictures.length}
+        </p>
+        <button onClick={clickDroit}></button>
+      </div>
     </div>
   );
 };
