@@ -11,11 +11,16 @@ const Navigation = () => {
   return (
     <div className="navigation">
       <ul>
-        <NavLink style={{ color: isActive("/") ? "red" : "blue" }} to="/">
+        <NavLink
+          style={{
+            textDecoration: isActive("/accueil") ? "underline" : "none",
+          }}
+          to="/"
+        >
           <li>Acceuil</li>
         </NavLink>
         <NavLink
-          style={{ color: isActive("/about") ? "red" : "blue" }}
+          style={{ textDecoration: isActive("/about") ? "underline" : "none" }}
           to="/about"
         >
           <li>A Propos</li>

@@ -2,6 +2,7 @@
   &_logement {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 50px;
@@ -36,7 +37,6 @@
     }
     &-host {
       display: flex;
-
       width: 20%;
       gap: 10px;
       & p {
@@ -70,13 +70,28 @@
   }
   &_profil {
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
   }
 }
 
 .collapse {
   &_container {
     width: 45%;
+  }
+  &_single {
+    display: flex;
+    background-color: #ff6060;
+    border-radius: 5px;
+    align-items: center;
+    width: 96%;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 50px;
+    color: white;
   }
 }
 

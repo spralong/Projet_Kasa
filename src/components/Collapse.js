@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import chevronup from "../images/chevron-haut.png";
 import chevrondown from "../images/chevron-bas.png";
+import { useLocation } from "react-router-dom";
 
 const Collapse = ({ title, content }) => {
   // Déclaration du state pour gérer l'ouverture/fermeture du collapse
@@ -9,9 +10,16 @@ const Collapse = ({ title, content }) => {
   // Fonction pour basculer l'état du collapse
   const toggleCollapse = () => setIsOpen(!isOpen);
 
+  const location = useLocation();
+
+  const routeAbout = location.pathname === "/about";
+
   return (
-    <div className="collapse_container">
-      <div className="collapse_title collapse_about" onClick={toggleCollapse}>
+    <div className="collapse_container collapse_block">
+      <div
+        className={routeAbout ? "collapse_about" : "collapse_single"}
+        onClick={toggleCollapse}
+      >
         <h2>{title}</h2>
         <img src={isOpen ? chevronup : chevrondown} />
       </div>

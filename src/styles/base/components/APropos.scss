@@ -16,10 +16,12 @@
 .collapse {
   width: 75%;
   display: flex;
-  margin: auto;
   margin-bottom: 70px;
   flex-direction: column;
   row-gap: 20px;
+  &_block {
+    width: 100%;
+  }
   &_about {
     display: flex;
     background-color: #ff6060;

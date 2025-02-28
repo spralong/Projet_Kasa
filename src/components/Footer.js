@@ -6,7 +6,6 @@ const Footer = () => {
     <div className="footer">
       <img src={logo} alt="logo Kasa" />
       <p>
-        {/* Faire apparaitre l'icon */}
         <span className="footer-icon">
           <i class="fa-thin fa-circle-c"></i>
         </span>

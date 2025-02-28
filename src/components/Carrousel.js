@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import fleche from "../images/right-chevron.png";
 
 const Carrousel = ({ pictures }) => {
   const [currentIndex, index] = useState(0);
@@ -12,22 +13,39 @@ const Carrousel = ({ pictures }) => {
 
   return (
     <div className="containeur_carrousel">
-      <div
-        key={index}
-        className={
-          'containeur_carrousel-image {index === currentIndex ? "active" : "hidden"}'
-        }
-      >
+      <div className="images_container">
         {pictures.map((picture, index) => (
-          <img src={picture}></img>
+          <div
+            key={index}
+            className={`containeur_carrousel-image ${
+              index === currentIndex ? "active" : "hidden"
+            }`}
+          >
+            <img src={picture}></img>
+          </div>
         ))}
+        <div className="containeur_carrousel-index">
+          <p>
+            {currentIndex + 1}/{pictures.length}
+          </p>
+        </div>
       </div>
+
       <div className="containeur_carrousel-button">
-        <button onClick={clickGauche}></button>
-        <p>
-          {currentIndex + 1}/{pictures.length}
-        </p>
-        <button onClick={clickDroit}></button>
+        <button className="button_gauche" onClick={clickGauche}>
+          <img
+            className="fleche_gauche"
+            src={fleche}
+            alt="Fleche de gauche"
+          ></img>
+        </button>
+        <button className="button_droit" onClick={clickDroit}>
+          <img
+            className="fleche_droite"
+            src={fleche}
+            alt="Fleche de droite"
+          ></img>
+        </button>
       </div>
     </div>
   );

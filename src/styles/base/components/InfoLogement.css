@@ -1,6 +1,7 @@
 .containeur_logement {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 50px;
@@ -66,6 +67,7 @@
 }
 .containeur_profil {
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
 }
 
