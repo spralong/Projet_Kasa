@@ -36,3 +36,9 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .banner__txt {
+    font-size: 4vw;
+  }
+}

@@ -6,8 +6,6 @@ const Navigation = () => {
 
   const isActive = (path) => location.pathname === path;
 
-  console.log(isActive);
-
   return (
     <div className="navigation">
       <ul>

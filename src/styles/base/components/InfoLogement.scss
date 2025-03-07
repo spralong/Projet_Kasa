@@ -78,9 +78,6 @@
 }
 
 .collapse {
-  &_container {
-    width: 45%;
-  }
   &_single {
     display: flex;
     background-color: #ff6060;
@@ -88,10 +85,14 @@
     align-items: center;
     width: 96%;
     justify-content: space-between;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
     height: 50px;
     color: white;
+    & h2 {
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
 }
 
@@ -103,5 +104,17 @@
   &_vide {
     color: gray;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containeur_logement {
+    flex-direction: column;
+  }
+  .containeur_profil {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
   }
 }

@@ -4,17 +4,18 @@
   align-items: center;
   flex-direction: column;
   color: #ff6060;
+  padding-left: 5%;
+  padding-right: 5%;
 
   & img {
-    max-width: 600px;
-    max-height: 270px;
+    width: 50%;
     padding: 50px 0px 0px 0px;
     margin: 0px;
   }
 
   &_txt {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 3vw;
     padding: 50px 0px 100px 0px;
     margin: 0px;
   }
@@ -29,5 +30,14 @@
   }
   & a {
     color: #ff6060;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container-error_txt {
+    padding: 30px 0px 50px 0px;
+  }
+  .container-error_link {
+    font-size: 10px;
   }
 }

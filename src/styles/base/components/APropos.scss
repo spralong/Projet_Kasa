@@ -14,20 +14,21 @@
 }
 
 .collapse {
-  width: 75%;
+  width: 100%;
   display: flex;
   margin-bottom: 70px;
   flex-direction: column;
   row-gap: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
   &_block {
-    width: 100%;
+    width: 90%;
   }
   &_about {
     display: flex;
     background-color: #ff6060;
     border-radius: 5px;
     align-items: center;
-    width: 96%;
     justify-content: space-between;
     padding-right: 2%;
     padding-left: 2%;
@@ -50,5 +51,14 @@
     border-radius: 5px;
     font-size: 24px;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .collapse_content {
+    font-size: 18px;
+  }
+  .collapse_about h2 {
+    font-size: 20px;
   }
 }
