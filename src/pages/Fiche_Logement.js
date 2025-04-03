@@ -1,8 +1,7 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import InfoLogement from "../components/InfoLogement";
-import "../styles/base/components/InfoLogement.scss";
+import Footer from "../components/Home/Footer";
+import Header from "../components/Home/Header";
+import InfoLogement from "../components/Fiche_Logement/InfoLogement";
 
 const logementFonction = () => {
   return (

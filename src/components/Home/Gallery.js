@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logements from "../logements";
-import Card from "../components/Card";
+import logements from "../../logements";
+import Card from "../Fiche_Logement/Card";
 
 const Gallery = () => {
   return (

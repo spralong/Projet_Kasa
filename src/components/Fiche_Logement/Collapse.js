@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import chevronup from "../images/chevron-haut.png";
-import chevrondown from "../images/chevron-bas.png";
+import chevronup from "../../images/chevron-haut.png";
+import chevrondown from "../../images/chevron-bas.png";
 import { useLocation } from "react-router-dom";
 
 const Collapse = ({ title, content }) => {
@@ -26,7 +26,7 @@ const Collapse = ({ title, content }) => {
       {/* Affiche le contenu si le collapse est ouvert */}
       {isOpen && (
         <div className="collapse_content">
-          <p>{content}</p>
+          <div className="collapse_contenu">{content}</div>
         </div>
       )}
     </div>

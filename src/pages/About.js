@@ -1,10 +1,10 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Collapse from "../components/Collapse";
+import Footer from "../components/Home/Footer";
+import Header from "../components/Home/Header";
+import Collapse from "../components/Fiche_Logement/Collapse";
 import CollapseData from "../collapse.json";
 import Montagnes from "../images/Montagnes.png";
-import "../styles/base/components/APropos.scss";
+import "../components/About/APropos.scss";
 
 const About = () => {
   return (
@@ -16,9 +16,7 @@ const About = () => {
       <div className="collapse">
         {CollapseData.map((item) => {
           return (
-            <div key={item.id}>
-              <Collapse content={item.content} title={item.title} />
-            </div>
+            <Collapse content={item.content} key={item.id} title={item.title} />
           );
         })}
       </div>

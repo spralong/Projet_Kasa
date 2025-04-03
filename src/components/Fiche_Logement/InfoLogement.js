@@ -1,9 +1,9 @@
 import React from "react";
-import logement from "../logements";
-import Collapse from "../components/Collapse";
+import logement from "../../logements";
+import Collapse from "./Collapse";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Carrousel from "../components/Carrousel";
+import Carrousel from "./Carrousel";
 
 const logementData = () => {
   const appart = window.location.pathname;
@@ -28,9 +28,11 @@ const logementData = () => {
   for (let i = 0; i < maxRating; i++) {
     let star;
     if (i < rating) {
-      star = <FontAwesomeIcon className="etoile_pleine" icon={faStar} />;
+      star = (
+        <FontAwesomeIcon key={i} className="etoile_pleine" icon={faStar} />
+      );
     } else {
-      star = <FontAwesomeIcon className="etoile_vide" icon={faStar} />;
+      star = <FontAwesomeIcon key={i} className="etoile_vide" icon={faStar} />;
     }
     arrayStar.push(star);
   }
@@ -65,8 +67,8 @@ const logementData = () => {
         <Collapse
           content={
             <ul>
-              {test.equipments.map((equipement, index) => (
-                <li key={index}>{equipement}</li>
+              {test.equipments.map((equipement, index2) => (
+                <li key={index2}>{equipement}</li>
               ))}
             </ul>
           }

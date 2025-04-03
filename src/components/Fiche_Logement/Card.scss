@@ -10,14 +10,13 @@
     height: 100%;
     object-fit: cover;
     border-radius: 25px;
-    background-image: radial-gradient(
-      rgba(255, 165, 0, 0.5),
-      rgba(255, 255, 0, 0.5)
-    );
-    box-shadow: 0px -115px 48px -75px rgba(0, 0, 0, 0.75) inset;
+    filter: brightness(0.5);
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
   &_title {
-    font-size: 14px;
+    font-size: 18px;
     margin: 0px;
     padding-left: 15px;
     text-decoration: none;

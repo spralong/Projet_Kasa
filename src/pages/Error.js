@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Erreur404 from "../components/Erreur404";
+import Header from "../components/Home/Header";
+import Footer from "../components/Home/Footer";
+import Erreur404 from "../components/Error/Erreur404";
 
 const Error = () => {
   return (

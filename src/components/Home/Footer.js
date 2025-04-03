@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/Logo-blanc.png";
+import logo from "../../images/Logo-blanc.png";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
       <img src={logo} alt="logo Kasa" />
       <p>
         <span className="footer-icon">
-          <i class="fa-thin fa-circle-c"></i>
+          <i className="fa-thin fa-circle-c"></i>
         </span>
         2020 Kasa. All rights reserved
       </p>

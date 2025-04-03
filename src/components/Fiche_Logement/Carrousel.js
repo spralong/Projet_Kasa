@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import fleche from "../images/right-chevron.png";
+import fleche from "../../images/right-chevron.png";
 
 const Carrousel = ({ pictures }) => {
   const [currentIndex, index] = useState(0);
