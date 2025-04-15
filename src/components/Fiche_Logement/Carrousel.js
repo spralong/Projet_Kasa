@@ -29,23 +29,22 @@ const Carrousel = ({ pictures }) => {
             {currentIndex + 1}/{pictures.length}
           </p>
         </div>
-      </div>
-
-      <div className="containeur_carrousel-button">
-        <button className="button_gauche" onClick={clickGauche}>
-          <img
-            className="fleche_gauche"
-            src={fleche}
-            alt="Fleche de gauche"
-          ></img>
-        </button>
-        <button className="button_droit" onClick={clickDroit}>
-          <img
-            className="fleche_droite"
-            src={fleche}
-            alt="Fleche de droite"
-          ></img>
-        </button>
+        <div className="containeur_carrousel-button">
+          <button className="button_gauche" onClick={clickGauche}>
+            <img
+              className="fleche_gauche"
+              src={fleche}
+              alt="Fleche de gauche"
+            ></img>
+          </button>
+          <button className="button_droit" onClick={clickDroit}>
+            <img
+              className="fleche_droite"
+              src={fleche}
+              alt="Fleche de droite"
+            ></img>
+          </button>
+        </div>
       </div>
     </div>
   );

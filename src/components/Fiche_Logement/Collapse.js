@@ -25,7 +25,12 @@ const Collapse = ({ title, content }) => {
       </div>
       {/* Affiche le contenu si le collapse est ouvert */}
       {isOpen && (
-        <div className="collapse_content">
+        <div
+          className={
+            routeAbout ? "collapse_about-content" : "collapse_single-content"
+          }
+          onClick={toggleCollapse}
+        >
           <div className="collapse_contenu">{content}</div>
         </div>
       )}

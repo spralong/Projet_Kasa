@@ -4,6 +4,8 @@ import Collapse from "./Collapse";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Carrousel from "./Carrousel";
+// import Error from "../../pages/Error";
+import Erreur404 from "../Error/Erreur404";
 
 const logementData = () => {
   const appart = window.location.pathname;
@@ -14,7 +16,9 @@ const logementData = () => {
   const test = logement.find(
     (logementFonction) => logementFonction.id === appart2
   );
-
+  if (!test) {
+    return <Erreur404 />;
+  }
   const tags = test.tags;
 
   const rating = test.rating;

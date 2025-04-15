@@ -11,3 +11,10 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .header img {
+    width: 25%;
+    height: 25%;
+  }
+}

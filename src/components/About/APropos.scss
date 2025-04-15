@@ -35,6 +35,17 @@
     padding-left: 2%;
     height: 50px;
     color: white;
+    &-content {
+      background-color: #f7f7f7;
+      padding: 10px 20px 10px 20px;
+      color: #ff6060;
+      border-radius: 5px;
+      font-size: 24px;
+      font-weight: 400;
+      & ul {
+        padding: 0px;
+      }
+    }
 
     & img {
       width: 25px;
@@ -45,18 +56,10 @@
       font-weight: 500;
     }
   }
-  &_content {
-    background-color: #f7f7f7;
-    padding: 10px 20px 10px 20px;
-    color: #ff6060;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: 400;
-  }
 }
 
 @media screen and (max-width: 500px) {
-  .collapse_content {
+  .collapse_about-content {
     font-size: 18px;
   }
   .collapse_about h2 {

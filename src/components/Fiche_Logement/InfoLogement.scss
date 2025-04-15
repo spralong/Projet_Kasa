@@ -33,6 +33,8 @@
         color: white;
         border-radius: 15px;
         font-size: 12px;
+        display: flex;
+        align-items: center;
       }
     }
     &-host {
@@ -89,6 +91,18 @@
     padding-left: 5%;
     height: 50px;
     color: white;
+    &-content {
+      background-color: #f7f7f7;
+      padding: 10px 20px 10px 20px;
+      color: #ff6060;
+      border-radius: 5px;
+      font-size: 24px;
+      font-weight: 400;
+      & ul {
+        padding: 0px;
+        margin: 0px;
+      }
+    }
     & h2 {
       font-size: 18px;
       font-weight: 500;
@@ -107,14 +121,25 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .containeur_logement {
     flex-direction: column;
   }
   .containeur_profil {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 30%;
     align-items: center;
     padding-top: 20px;
+  }
+  .containeur_collapse {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .collapse_single {
+    width: 130%;
+    &-content {
+      width: 127%;
+      font-size: 18px;
+    }
   }
 }

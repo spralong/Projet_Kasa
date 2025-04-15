@@ -1,62 +1,104 @@
 .containeur_carrousel {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-top: 50px;
-  &-button {
-    display: flex;
-    justify-content: space-around;
-  }
-  &-index {
-    display: flex;
-    justify-content: center;
-    & p {
-      font-size: 24px;
-      color: white;
-      position: absolute;
-      top: 500px;
-    }
-  }
-  &-image.hidden {
-    display: none;
-  }
-  &-image.active {
-    display: flex;
-    justify-content: center;
-    & img {
-      width: 90%;
-      border-radius: 20px;
-      max-height: 415px;
-      object-fit: cover;
-    }
-  }
 }
 
-.button {
-  &_gauche {
-    position: absolute;
-    top: 335px;
-    left: 6%;
-    border: none;
-    background: none;
-    width: 6%;
-  }
-  &_droit {
-    position: absolute;
-    top: 335px;
-    right: 6%;
-    border: none;
-    background: none;
-    width: 6%;
-  }
-}
-
-.fleche_gauche {
-  transform: rotate(180deg);
+.images_container {
+  position: relative; /* Base pour les éléments absolus */
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
+.containeur_carrousel-image.hidden {
+  display: none;
+}
+
+.containeur_carrousel-image.active {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.containeur_carrousel-image.active img {
+  width: 90%;
+  max-height: 415px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Flèches */
+.button_gauche,
+.button_droit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.2s ease;
+}
+
+/* Position collée à l'image (5% du bord car image fait 90%) */
+.button_gauche {
+  left: calc(5% - 8px);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.button_droit {
+  right: calc(5% - 8px);
+}
+
+/* Hover effect */
+.button_gauche:hover,
+.button_droit:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.fleche_gauche,
 .fleche_droite {
   width: 100%;
+  height: auto;
+}
+
+/* Index (numérotation image) */
+.containeur_carrousel-index {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .containeur_carrousel-image.active img {
+    width: 95%;
+    max-height: 300px;
+  }
+
+  .button_gauche,
+  .button_droit {
+    width: 30px;
+    height: 30px;
+  }
+
+  .button_gauche {
+    left: calc(2.5% - 8px);
+  }
+
+  .button_droit {
+    right: calc(2.5% - 8px);
+  }
+
+  .containeur_carrousel-index {
+    font-size: 18px;
+  }
 }
